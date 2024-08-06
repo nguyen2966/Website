@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background color */
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+    
+            color: blueviolet;
+            text-align: center;
+            margin-top: 20px; /* Adjust top margin as needed */
+            transition: font-size 0.4s, border 0.4s;
+            cursor: pointer;
+        }
+        h1:hover {
+            font-size: 50px;
+            border: 1px solid violet;
+        }
+        h1:active {
+            background-color: plum;
+        }
+        table {
+            position: absolute;
+            width: 80%;
+            max-width: 1000px;
+            margin-top: 30px; /* Adjust top margin as needed */
+            border-collapse: collapse;
+            background-color: white; /* White background for the table */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .header {
+            background-color: green; /* Green header background color */
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .item img {
+            width: 300px; /* Fixed width */
+            height: 200px; /* Fixed height */
+            object-fit: contain; /* Ensure the image covers the specified dimensions */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: width 0.3s, background-color 0.3s;
+        }
+        .item img:hover {
+            width: 400px; /* Enlarge image on hover */
+        }
+        .item p {
+            font-size: 18px;
+            color: rgb(74, 133, 74); /* Dark green text color */
+            transition: font-weight 0.5s, color 0.5s;
+        }
+        .item p:hover {
+            font-weight: bold;
+        }
+        .item p:active {
+            color: rgb(32, 52, 32); /* Darker green on active */
+        }
+        input[type="checkbox"] {
+            display: none; /* Hide default checkbox */
+        }
+        label {
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(150, 150, 150); /* Gray background color for labels */
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        label:hover {
+            background-color: rgb(100, 100, 100); /* Darker gray on hover */
+        }
+        .info {
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>VŨ KHÍ CHO MỌI NHÀ</h1>
+
+    <table>
+        <tr>
+            <th colspan="4" class="header">Vũ khí bộ binh</th>
+        </tr>
+        <tr class="item">
+            <td class="item"> 
+                <img src="personnal_project/AK47.jpg" alt="AK47">   
+                <p>Xuất sứ: Liên Xô</p> 
+                <p>Giá: 7.000.000 VNĐ</p>
+                <input type="checkbox" id="buy1">
+                <label for="buy1" class="info">Chọn mua</label>
+            </td>
+            <td class="item"> 
+                <img src="personnal_project/M16.jpg" alt="M16">   
+                <p>Xuất sứ: Hoa Kì</p> 
+                <p>Giá: 17.000.000 VNĐ</p>
+                <input type="checkbox" id="buy2">
+                <label for="buy2" class="info">Chọn mua</label>
+            </td>
+            <td class="item"> 
+                <img src="personnal_project/STV.jpg" alt="STV">   
+                <p>Xuất sứ: Việt Nam</p> 
+                <p>Giá: 10.000.000 VNĐ</p>
+                <input type="checkbox" id="buy3">
+                <label for="buy3" class="info">Chọn mua</label>
+            </td>
+            <td class="item"> 
+                <img src="personnal_project/Dao găm.jpg" alt="Dao găm">   
+                <p>Xuất sứ: ...</p> 
+                <p>Giá: 1.000.000 VNĐ</p>
+                <input type="checkbox" id="buy4">
+                <label for="buy4" class="info">Chọn mua</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="header" colspan="4">Vũ khí chống tăng</td>
+        </tr>
+        <tr class="item">
+            <td class="item"> 
+                <img src="personnal_project/rpg9.jpg" alt="RPG-9">   
+                <p>Xuất sứ: Liên Xô</p> 
+                <p>Giá: 50.000.000 VNĐ</p>
+                <input type="checkbox" id="buy5">
+                <label for="buy5" class="info">Chọn mua</label>
+            </td>
+            <td class="item"> 
+                <img src="personnal_project/javelin.jpg" alt="Javelin">   
+                <p>Xuất sứ: Hoa Kì</p> 
+                <p>Giá: 2.000.000.000 VNĐ</p>
+                <input type="checkbox" id="buy6">
+                <label for="buy6" class="info">Chọn mua</label>
+            </td>
+            <td class="item"> 
+                <img src="personnal_project/mìn.jpg" alt="Mìn">   
+                <p>Xuất sứ: Nga</p> 
+                <p>Giá: 10.000.000 VNĐ</p>
+                <input type="checkbox" id="buy7">
+                <label for="buy7" class="info">Chọn mua</label>
+            </td>
+            <td class="item"> 
+                <img src="personnal_project/bom.jpg" alt="Bom">   
+                <p>Xuất sứ: Nhật Bản</p> 
+                <p>Giá: 2.000.000 VNĐ</p>
+                <input type="checkbox" id="buy8">
+                <label for="buy8" class="info">Chọn mua</label>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
